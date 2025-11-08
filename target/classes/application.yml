@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-agent-system
+  
+  main:
+    allow-bean-definition-overriding: true
+  
+  r2dbc:
+    url: r2dbc:h2:mem:///aiagentsystem
+    username: sa
+    password: 
+    pool:
+      initial-size: 10
+      max-size: 20
+  
+  sql:
+    init:
+      mode: always
+  
+  data:
+    redis:
+      enabled: false
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+  
+  security:
+    jwt:
+      secret: mySecretKey123456789012345678901234567890
+      expiration: 86400000 # 24 hours
+
+logging:
+  level:
+    com.example.aiagentsystem: DEBUG
+    org.springframework.r2dbc: DEBUG
+    io.r2dbc.postgresql: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
