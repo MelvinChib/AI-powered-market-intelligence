@@ -8,6 +8,7 @@
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/controller/NotificationController.java
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/controller/RiskController.java
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/controller/SimulationController.java
+/Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/controller/WebController.java
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/dto/AgentChatRequest.java
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/dto/AgentChatResponse.java
 /Users/melvinchibanda/Documents/Top project/untitled/src/main/java/com/example/aiagentsystem/dto/AgentCommunicationDTO.java

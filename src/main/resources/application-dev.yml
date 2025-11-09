@@ -1,0 +1,18 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///aiagentsystem
+    username: sa
+    password: 
+  data:
+    redis:
+      enabled: false
+
+logging:
+  level:
+    com.example.aiagentsystem: DEBUG
+    org.springframework.security: DEBUG
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
